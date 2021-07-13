@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.parent{
+    height: 100%;
+    width: 100%;
+    border: 20px;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(bgim.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+ 
+}
+/*menu section */
+.child1{
+    display: none;
+}
+.navbar-nav{
+    display: none;
+}
+.side-nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-y: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+} 
+.side-nav a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color:crimson;
+    display: block;
+    transition: 0.3s;
+  
+}
+.side-nav a:hover{
+    color: #fff;
+}
+ .side-nav .btn-close{
+     position: absolute;
+     top: 0;
+     right: 22px;
+     font-size: 36px;
+     margin-left: 50px;
+
+ }
+ /*contact-nav section */
+ .con-slide{
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-y: hidden;
+    padding-left: 60px;
+    transition: 0.5s;
+ }
+ .con-slide h3,ul{
+     text-align: center;
+     color: white;
+     transition: 0.5s;
+     padding: 2em 1em 1em;
+     list-style: none;
+ }
+.con-slide ul{
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+    
+ }
+ .con-slide .con-btn-close{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+    transition: 0.5s;
+ }
+ .con-slide a{
+     color: white;
+     text-decoration: none;
+ }
+/*heading section */
+
+.heading{
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+.head{
+    color:#666;
+    font-size: 56px;
+    text-transform: uppercase;
+}
+p{
+    font-family: cursive;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*samples-section */
+.samples{
+    padding: 2em 1em 1em;
+    background-color: #666;
+    text-align: center;
+    margin-top: 100px;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+.card-title{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.samples ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.samples li{
+    background: #fff;
+    margin-bottom: 1em;
+    color: #666;
+}
+.card-content{
+    padding: 1.5em;
+}
+/* about us section */
+.container{
+    text-align: center;
+    padding: 2em 1em 1em;
+    background: #111;
+    color: #fff;
+    font-family: cursive;
+}
+.leearn-more a{
+    background: #333;
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+    border: 1px solid #666;
+    
+}
+.leearn-more{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h3 a:hover{
+    background: #eaeaea;
+    color: #333;
+}
+
+/*contact info section*/
+#contact-section{
+    background: #1f3542;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+}
+.con{
+    height: 60px;
+    width: 60px;
+    padding: 10px 12px;
+    transition: 0.3s ease-in-out;
+    
+}h6{
+    color: black;
+}
+
+.con:hover{
+    background: #333;
+    transform: translateY(5px);
+}
+.contact{
+    padding-top: 40px;
+}
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 5px 5px ;
+}
+@media(min-width:700px){
+    
+    /*menu section */
+    .child1{
+        display: flex;
+    }
+    .open_slide{
+        display: none;
+    }
+.child1 {
+    float: right;
+    margin-top: 20px;
+    list-style: none;
+}
+.child1 li{
+    display: inline-block;
+}
+.child1 li a{
+    text-decoration:none;
+    color:crimson;
+    padding: 10px 20px;
+    font-family: cursive;
+    margin-top: 10px;
+    transition: 0.4s;
+    
+}
+li a:hover{
+    color: white;
+    opacity: 0.5;
+}
+    /* sample section */
+.samples ul {
+    display: flex;
+    justify-content: space-around;
+}
+.samples li{
+    width: 30%;
+    transition: 0.5s ease-in-out;
+    box-shadow: rgba(0,0,0,0.7);
+}
+.samples li:hover{
+    transform: translateY(5px);
+}
+.head{
+    font-size: 70px;
+}
+}
